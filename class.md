@@ -121,8 +121,8 @@ fun A() { // 객체생성 없이 클래스 이름으로 접근 가능
 ```kotlin
 var r:Rect = Rect(3,2)
 var r2:Rect ?= null
-r2?.calc()
-r2!!.calc()
+r2?.calc() // r2에 오브젝트가 있으면 정상 출력, null이면 지정해둔 다른 것을 호출
+r2!!.calc() // r2에 오브젝트가 있으면 정상 출력, null이면 error
 r2?.calc()?:0 // 0호출
 ```
 
