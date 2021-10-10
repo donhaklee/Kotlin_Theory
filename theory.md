@@ -74,15 +74,93 @@ val x : short = 10
 var y : Int = 5
 ```
 ### 4) scope
+- global, local로 나눠진다.
+```kotlin
+// global scope
+val g1 = 8
+lateinit var g2:String // lateinit : 초기화를 하지 않는 표시
+var g3:Float = 0.0F
 
+fun test() {
+  val x = 5 // read-only
+  var y = 10
+  println("$x : $y")
+}
+
+```
 
 ### 5) 함수
 ```kotlin
+// 함수정의
+fun add(var x:Int, var y:Int) : Int {
+  fun areasize()
+}
+
+// class정의
 class Rect {
   var r:Int
   fun areaSize() {
   }
 }
-// 
+class Rect(var r:Int) {
+  fun areaSize() {
+  }
+}
+
+// object(객체) 생성
 var r : Rect = Rect()
+
+
+// random : (min..max).random()
+(a..b).random()
+```
+---
+#2. 제어문
+- 조건문 : if, when
+- 반복문 : for, while, do~while
+```kotlin
+// 1. if
+// statement 형태
+if(a<8) {
+  b = ++a
+  c = b+2
+} else {
+  b = --a
+  c = b-2
+}
+// expression 형태
+a = if(b>3) ++b else --b
+```
+```kotlin
+// 2. when
+when(a) {
+  1 -> println("1")
+  2 -> println("2")
+  a > 10 -> println("10초과")
+}
+
+```
+---
+# 3. 클래스
+1) 구조
+- class name
+- property : 기본적으로 visibility를 세팅하면 property는 기본적으로 -로 표시되고 private를 의미한다.
+- method
+(encapsulation[private로 막는것], abstraction[추상화 / 필요한 것만 정의])
+
+2) 생성자
+- 코틀린은 자동으로 getter setter를 만든다
+- 코틀린에 private을 넣으면 getter setter를 막는다는 의미
+```kotlin
+// constructor 사용
+class Album {
+  val id:Int = 0
+  var title:String = ""
+  var play:Int = 0
+  constructor (id:Int, title:String, 
+    this.id = id
+    this.title = title
+  }
+}
+
 ```
