@@ -116,7 +116,8 @@ fun A() { // 객체생성 없이 클래스 이름으로 접근 가능
 ---
 
 # 5. null safety
-null point exception 해결
+- 코틀린은 기본적으로 null 불허이기 때문에 초기화를 시켜야한다.
+- null point exception 해결
 ```kotlin
 var r:Rect = Rect(3,2)
 var r2:Rect ?= null
