@@ -101,7 +101,7 @@ rect.w = 5
 rect.h = 2 // 선언가능
 ```
 
-4. Companion class
+# 4. Companion class
 ```kotlin
 class Tri {
   conpanion object{
