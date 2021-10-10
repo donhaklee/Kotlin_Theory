@@ -7,7 +7,7 @@ for(number in numblist) println("$number ")
 books.add("Python")
 ```
 
-5. RecyclerView
+# 2. RecyclerView
 RecyclerView : itemView집합 : itemdata집합
 ```kotlin
 
