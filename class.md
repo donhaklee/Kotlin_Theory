@@ -71,3 +71,73 @@ fun main() {
   println(album.artist) // Boa
 } 
 ```
+
+# 2. Data class
+```kotlin
+// 일반클래스
+class Circle(var r:Int) {
+  var c1 : Circle(3)
+  var c2 : Circle(3)
+  c1.equals(c2)  // error
+}
+
+// Data class
+data class Circle(var r:Int) {
+  var c1 : Circle(3)
+  var c2 : Circle(3)
+  c1.equals(c2)  // error
+}
+
+```
+
+# 3. Object class : 익명클래스
+```kotlin
+var rect = object { // var rect = 객체 참조변수
+  var w:Int = 0
+  var h:Int = 0
+}
+
+rect.w = 5
+rect.h = 2 // 선언가능
+```
+
+4. Companion class
+```kotlin
+class Tri {
+  conpanion object{
+    var b:Int
+    var h:Int
+  }
+}
+fun A() { // 객체생성 없이 클래스 이름으로 접근 가능
+  Tri.b = 3
+}
+```
+---
+
+# 5. null safety
+null point exception 해결
+```kotlin
+var r:Rect = Rect(3,2)
+var r2:Rect ?= null
+r2?.calc()
+r2!!.calc()
+r2?.calc()?:0 // 0호출
+```
+
+# 6. 람다함수
+### 1) structured programing
+### 2) object-oriented programing
+### 3) functional programing
+### 4) Logical programing
+
+```kotlin
+val f = {a:Int, b:Int->a+b}
+val f : (Int, Int) -> Int = { a:Int, b:Int -> a+b }
+
+// 매개변수 x
+val sq: () -> Unit = { println(x * x) }
+
+// 매개변수 1개
+val sq2: (Int) -> Int = { it * it }
+```
