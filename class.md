@@ -1,4 +1,4 @@
-# 3. 클래스
+# 1. 클래스
 ### 1) 구조
 - class name
 - property : 기본적으로 visibility를 세팅하면 property는 기본적으로 -로 표시되고 private를 의미한다.
