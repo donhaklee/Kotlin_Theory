@@ -146,4 +146,10 @@ val sq: () -> Unit = { println(x * x) }
 
 // 매개변수 1개
 val sq2: (Int) -> Int = { it * it }
+
+// 고차함수
+fun process(processor: (Int, Int) -> Int, a:Int, b:Int) : Int {
+  return processor(a,b)
+}
+val x2 = process({x,y -> x*x + y*y}, 3, 3)
 ```
