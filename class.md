@@ -127,10 +127,10 @@ r2?.calc()?:0 // 0호출
 ```
 
 # 6. 람다함수
-### 1) structured programing
-### 2) object-oriented programing
-### 3) functional programing
-### 4) Logical programing
+### 1) structured programing : 파스칼, c언어 / data와 function이 따로 분리돼있음
+### 2) object-oriented programing : data와 function을 합한 object를 만들어 component 수행
+### 3) functional programing : lamda 표현 기반 함수
+### 4) Logical programing : true false 기반으로 동작
 
 ```kotlin
 val f = {a:Int, b:Int->a+b}
