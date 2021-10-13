@@ -24,3 +24,8 @@
 ---
 ### 7) Motion Layout
 -
+
+
+
+마진 : view끼리의 간격
+패딩 : view내의 content끼리의 간격
