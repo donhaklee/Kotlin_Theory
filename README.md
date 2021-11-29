@@ -4,4 +4,4 @@
 대학 4학년 2학기 스마트앱 프로그래밍 수업 정리<br>
 스마트앱 프로그래밍 과제1 link : https://github.com/donhaklee/Project_JapanAppHomework <br>
 스마트앱 프로그래밍 과제2 link : <br>
-스마트앱 프로그래밍 기말과제 link : <br>
+스마트앱 프로그래밍 기말과제 link : https://github.com/donhaklee/Project_AppFinalProject <br>
